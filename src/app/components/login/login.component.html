@@ -1,0 +1,15 @@
+<h3>Task Tracker Login</h3>
+<form class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" [(ngModel)]="email" />
+    </div>
+    <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" [(ngModel)]="password" />
+    </div>
+    <div *ngIf="showError" style="margin-top: -10px; margin-bottom: 20px;">
+        <p style="color: red; font-size: 0.75em">Invalid Credentials</p>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-block" />
+</form>

@@ -1,5 +1,10 @@
 <div class="container">
-  <app-header></app-header>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
+  <div *ngIf="loggedIn; else loggedOut">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer (onLogout)="handleLogout()"></app-footer>
+  </div>
+  <ng-template #loggedOut>
+    <app-login (onLogin)="handleLogin($event)"></app-login>
+  </ng-template>
 </div>

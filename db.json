@@ -13,9 +13,9 @@
       "reminder": true
     },
     {
-      "text": "Butt Scratching",
-      "day": "June 24 at YourMom",
-      "reminder": true,
+      "text": "Buying Beer",
+      "day": "May 28th at 4:30pm",
+      "reminder": false,
       "id": 3
     }
   ]
